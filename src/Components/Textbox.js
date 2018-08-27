@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-//import words from '../data/words.json'
+import words from '../Data/words.json'
+
+const Words = this.state.words
 
 class WordBox extends Component {
-    render () {
-        console.log('thisisathing')
-        return (
-            <h1> SNOWMAN </h1>
-        )
+    render() {
+      return (
+        <div className="App">
+          {words.map((words, i) => {
+            return (
+              <Words key={i}/>
+            );
+          })}
+        </div>
+      );
     }
-}
+  }
 
 export default WordBox;
