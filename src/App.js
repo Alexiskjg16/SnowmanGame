@@ -9,9 +9,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <AllLetters/>
       <WordBox/>
-        
+      <AllLetters/>
       </div>
     );
   }

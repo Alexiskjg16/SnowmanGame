@@ -10,8 +10,7 @@ class AllLetters extends Component {
           pickedLetters: []
         }
       }
-    
-    
+
       addLetterToPickedArray = (letter) => {
         const _newPickedLetters = this.state.pickedLetters.slice()
         _newPickedLetters.push(letter)
@@ -20,8 +19,6 @@ class AllLetters extends Component {
           pickedLetters: _newPickedLetters
         })
       }
-    
-    
    
     render () {
         return (
@@ -34,7 +31,7 @@ class AllLetters extends Component {
                     addLetterHandler={this.addLetterToPickedArray} />
                 })}
 
-                <h1> Letters Picked:</h1>
+                <h3> Letters Picked:</h3>
                 {this.state.pickedLetters.map((letter, i) => {
                    return <div key={i}>{letter}</div>
                 })}

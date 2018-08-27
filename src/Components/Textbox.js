@@ -11,12 +11,14 @@ class WordBox extends Component {
         this.state = {
           randomWords: words[randomNumber]
         }
+        const hiddenWord = (this.state.randomWords)
+        console.log(this.state.randomWords.split(''))
       }
     render() {
       return (
             <div>
-              <p>{this.state.randomWord}</p>
-              {console.log(this.state.randomWord)}
+            <h1> {this.state.hiddenWord}</h1>
+              {console.log(this.state.randomWords)}
             </div>
             );
           }}
