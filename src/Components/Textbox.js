@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import words from '../Data/words.json'
 
-const Words = this.state.words
+
 
 class WordBox extends Component {
+
+    constructor() {
+        super()
+        const randomNumber = Math.floor(Math.random()*words.length)
+        this.state = {
+          randomWords: words[randomNumber]
+        }
+      }
     render() {
       return (
-        <div className="App">
-          {words.map((words, i) => {
-            return (
-              <Words key={i}/>
+            <div>
+              <p>{this.state.randomWord}</p>
+              {console.log(this.state.randomWord)}
+            </div>
             );
-          })}
-        </div>
-      );
-    }
-  }
+          }}
 
 export default WordBox;
