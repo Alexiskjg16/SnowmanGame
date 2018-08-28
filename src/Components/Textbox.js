@@ -8,9 +8,9 @@ class WordBox extends Component {
     constructor() {
         super()
         const randomNumber = Math.floor(Math.random()*words.length)
-        
         this.state = {
           randomWords: words[randomNumber]
+         
         }
        // let hiddenWord = (this.state.randomWords.map('_'))
         console.log(this.state.randomWords)
@@ -19,7 +19,7 @@ class WordBox extends Component {
        
       return (
             <div>
-            <h1>{this.state.hiddenWord}</h1>
+            <h1>{this.state.randomWords}</h1>
               {console.log(this.state.randomWords.split(''))}
             </div>
             );
