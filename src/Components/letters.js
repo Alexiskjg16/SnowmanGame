@@ -19,7 +19,7 @@ class AllLetters extends Component {
           pickedLetters: _newPickedLetters
         })
       }
-   
+      
     render () {
         return (
             <div>
@@ -31,7 +31,7 @@ class AllLetters extends Component {
                     addLetterHandler={this.addLetterToPickedArray} />
                 })}
 
-                <h3> Letters Picked:</h3>
+                <h3> Letters Already Used:</h3>
                 {this.state.pickedLetters.map((letter, i) => {
                    return <div key={i}>{letter}</div>
                 })}

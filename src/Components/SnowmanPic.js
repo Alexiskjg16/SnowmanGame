@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import snowman from './images/step_1.png';
+import snowman from '../images/step_0.png';
 
 
 class SnowImage extends Component {
@@ -7,7 +7,7 @@ class SnowImage extends Component {
     render () {
         return (
 <div>
-<img src = {snowman} />
+<img src = {snowman} alt="Snowman" className='SnowPic'/>
 </div>
         )
     }}

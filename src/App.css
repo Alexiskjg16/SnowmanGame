@@ -4,3 +4,8 @@
 body {
 background-image: url('./CSSStuff/snowflake-background.jpg');
 }
+
+.SnowPic {
+  width: 15em;
+  height: auto; 
+}
