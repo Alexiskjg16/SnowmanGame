@@ -32,7 +32,7 @@ class WordBox extends Component {
          
         }
        // let hiddenWord = (this.state.randomWords.map('_'))
-        console.log(this.state.randomWords)
+        console.log(this.state.displayWord)
       }
     render() {
        
