@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
-import snowman from '../images/step_0.png';
 
+class Snowman extends Component {
+    render() {
+        let missedGuesses = this.props.picked.length - this.props.count
+        if (missedGuesses < 8) {
+            return (
+                <div>
+                    <h1> {`You've Missed: ${missedGuesses}`}
+                    </h1>
+                </div>
+            );
+        }
+        else {
+            return (
+                <div>
+                    <img
+                    src="https://media.giphy.com/media/6Q3M4BIK0lX44/giphy.gif"
+                    alt="you-lose"
+                    width="350"
+                    style={{ borderRadius: '1em' }}
+                    />
+                </div>
+            )
+        }
+    }
+}
 
-class SnowImage extends Component {
-
-    render () {
-        return (
-<div>
-<img src = {snowman} alt="Snowman" className='SnowPic'/>
-</div>
-        )
-    }}
-
-    export default SnowImage
+export default Snowman;
